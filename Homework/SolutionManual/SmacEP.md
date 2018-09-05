@@ -4,7 +4,7 @@
  
 **Author:** Alex Collantes
  
-**Language:** C++ 11 Can be compiled using G++ Compiler.
+**Language:** C++ Can be compiled using G++ Compiler.
 
 For example,
 
@@ -20,7 +20,7 @@ will produce ./a.exe That can be executed. If you want a different name, the fol
 
 **Output:** This routine returns a single precision value for the number of decimal digits that can be represented on the computer being queried.
 
-**Usage/Example:** The routine has two arguments needed to return the values of the precision in terms of the smallest number that can be represented. Since the code is written in terms of a Fortran subroutine, the values of the machine machine epsilon and the power of two that gives the machine epsilon. Due to implicit Fortran typing, the first argument is a single precision value and the second is an integer.
+**Usage/Example:** The routine has two arguments needed to return the values of the precision in terms of the smallest number that can be represented. Since the code is written in terms of a C++ methods, the values of the machine machine epsilon and the power of two that gives the machine epsilon. The first argument is a single precision, a float value and the second is an integer.
 
 ```
  void SmacEp(float Sep, int iPow)
