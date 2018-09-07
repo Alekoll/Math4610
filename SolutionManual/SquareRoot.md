@@ -18,8 +18,8 @@ For example,
 
 **Usage/Example:** The routine requires three arguments. The routine returns a list that contains the two values and prints.
 ```
- findRoots(1,5,6)
- ```
+findRoots(1,5,6)
+```
 Output from the line above:
 
 `[(-3+0j), (-2+0j)]`
