@@ -19,7 +19,7 @@ For example,
 **Usage/Example:** The routine requires no arguments. The routine returns the value of the precision in terms of the smallest number that can be represented. 
 
 ```
- def DmacEp()
+ DmacEp()
  print('Digits ', iPow, ' Machine Ep: ' , Dep)
  ```
 Output from the line above:
