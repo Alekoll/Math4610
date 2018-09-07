@@ -2,10 +2,10 @@
 
 | Name | Link |
 | --- | --- |
-| SmacEp | List all new or modified files |
-| DmacEp | Show file differences that haven't been staged |
-| DmacEPpy | a;lsdkfja |
-| findRootspy | a;dkfjasdf; |
+| SmacEp | [Here](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/SmacEP.md) |
+| DmacEp | [Here](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/DmacEP.md) |
+| DmacEPpy | [Here](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/dmacEPPy.md) |
+| findRootspy | [Here](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/findRoots.md) |
 
 
 
