@@ -10,64 +10,44 @@ For example,
 
 `python3 newtonMethod.py`
 
-**Description/Purpose:** the Newton's method is a root-finding algorithm that takes the function, the derivative of the function, and a nearby intial guess x0, to approximate a root. If x0 is close, 
-then x1 will be closer to the root. The algorithm can be written as:
+**Description/Purpose:** the Newton's method is a root-finding algorithm that takes a function, the derivative of the function, and a nearby intial guess x0, to approximate a root. If x0 is close, 
+then x1 will be closer to the root. The algorithm can be summarized as:
 
 ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/710c11b9ec4568d1cfff49b7c7d41e0a7829a736)
 
-**Input:** This routine requires five inputs: function as a lambda expression, a as the left bound, b as the right bound, the tolerence, and maximum iterations.
-`bisection(f, a, b, tol, maxIter)`
+**Input:** This routine requires five inputs: function as a lambda expression, derivative of the function as a lambda expression, x0 as an inital guess, the tolerence, and maximum iterations.
+`NewtonMethod(f, fprime, x0, tol, maxIter)`
 
-lambda expression are written as followed: ``` lambda arguments : expression ```
+lambda expression are written as followed: 
+```python3
+lambda arguments : expression `
+```
 
-**Output:** This routine returns either a floating point number containing the root or None object indicating that the interval does not contain the root.
+**Output:** This routine returns either a floating point number containing the root or None object indicating that maximum amount of iterations has been met and solution did not converge.
 
 **Usage/Example:** The routine requires five arguments. The routine returns the root value or None object.
 
-```
- bisection(lambda x: x**2 - 3, .5, 3, pow(10, -15), 15)
+```python3
+ newtonMethod(lambda x: x**2 - 3, lambda x: 2*x, .5, pow(10, -15), 15)
  ```
- ```
- bisection(lambda x: x**2 - 3, 2, 3, pow(10, -15), 15)
- ```
-Output from the first code above:
+Output from the code above:
 
-`1.7320508075688767`
+`1.7320508075688772`
 
-Output from the second code above:
-```
-Sorry, but this interval does not contain a root
-None
-```
-**Implementation/Code:** The following code is for bisection(f, a, b, tol, maxIter)
+**Implementation/Code:** The following code is for NewtonMethod(f, fprime, x0, tol, maxIter)
 
 ```python3
-
-def bisection(f, a, b, tol, maxIter):
-    #initalize the f(a) and (b) and the k value
-    fa = f(a)
-    fb = f(b)
-    k = int(math.log2(tol/abs(b-a))/math.log2(1/2) + 1)
+def NewtonMethod(f, fPrime, x0, tol, maxIter):
+    i = 1
+    error = 10 * tol
     
-    if (maxIter == 4):
-        k = maxIter
-    
-    # Check if the given interval contains the root
-    if(fa * fb < 0.0):
-
-        for i in range (0, k):
-            c = .5*(a+b)
-            fc = f(c)
-            if(fa*fc < 0):
-                b = c
-                fb = fc
-            else:
-                a = c
-                fa = fc
-        
-        return a
-    else:
-        print("Sorry, but this interval does not contain a root")
-        return None 
-
+    while (error > tol and i <= maxIter):
+        i = i + 1
+        x1 = x0 - f(x0)/fPrime(x0)
+        error = abs(x1 - x0)
+        x0 = x1
+    if i == maxIter:
+        print("I'm sorry, but there was not a root near by")
+        return None
+    else: return x0
 ```
