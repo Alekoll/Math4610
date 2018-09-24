@@ -38,6 +38,7 @@ Output from the code above:
 
 ```python3
 def NewtonMethod(f, fPrime, x0, tol, maxIter):
+    
     i = 1
     error = 10 * tol
     
