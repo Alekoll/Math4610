@@ -12,6 +12,7 @@ For example,
 
 **Description/Purpose:** the Secant method is a root-finding algorithm that takes a function, a nearby inital guess x0, and an other nearby intial guess x1, to approximate a root by
 getting the succession of roots of the secant lines to better approximate the root of the function.
+
 ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/ce2bae249f0a7bd7316259506001e3ede137a878)
 
 **Input:** This routine requires five inputs: function as a lambda expression, x0 as a guess, x1 as another guess, the tolerence, and maximum iterations.
