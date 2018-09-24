@@ -34,7 +34,7 @@ Output from the code above:
 
 `1.7320508075688767`
 
-**Implementation/Code:** The following code is for secnt(f, x0, x1, tol, maxIter)
+**Implementation/Code:** The following code is for secant(f, x0, x1, tol, maxIter)
 
 ```python3
 
