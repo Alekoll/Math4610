@@ -11,27 +11,22 @@ For example,
 `python3 approxDeriv.py`
 
 **Description/Purpose:** This routine will approximate the derivative of a given function by using the definition of a derivative. 
-![](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bf%28x&plus;h%29-f%28x%29%29%29%7D%7Bh%7D)
+![](http://latex.codecogs.com/gif.latex?%5Cinline%20%5Clim%20h%20%5Cto%200%5Cfrac%7Bf%28a%20&plus;%20h%29%20-%20f%28a%29%7D%7Bh%7D)
 
-**Input:** There are three inputs: 
+**Input:** This routine requires three inputs: h, function as a lambda expression, and a. lambda expression are written as followed: ``` lambda arguments : expression ```
 
-**Output:** This routine returns a double precision value for the number of decimal digits that can be represented on the computer being queried.
+**Output:** This routine returns a floating point number as the approximated value
 
-**Usage/Example:** The routine requires no arguments. The routine returns the value of the precision in terms of the smallest number that can be represented. 
+**Usage/Example:** The routine requires three arguments. The routine returns the approximated value.
 
 ```
- DmacEp()
- print('Digits ', iPow, ' Machine Ep: ' , Dep)
+ approxDeriv(0.0001, lambda x: X**2 - 3, 2)
  ```
 Output from the line above:
 
-`Digits  53 Machine Ep:  1.1102230246251565e-16`
+`4.0001000000078335`
 
-The first value (53) is the number of binary digits that define the machine epsilon and the second is related to the decimal version of the same value. The number of decimal digits that can be represented is roughly eight (E-16 on the end of the second value).
-
-
-
-**Implementation/Code:** The following code is for DmacEps(). Make sure to import cmath
+**Implementation/Code:** The following code is for approxDeriv(h, f, a). Make sure to import cmath
 
 ```
 def DmacEp():
