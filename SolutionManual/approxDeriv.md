@@ -29,21 +29,6 @@ Output from the line above:
 **Implementation/Code:** The following code is for approxDeriv(h, f, a). Make sure to import cmath
 
 ```
-def DmacEp():
-    
-    Dep = 1.0
-    one = 1.0
-    appOne = one + Dep
-
-    iPow = 0
-    for i in range(1,1000):
-        iPow = 1 + iPow
-        Dep = Dep/2
-        appOne = one + Dep
-        if(abs(appOne - one) == 0.0):
-            break
-    print('Digits ', iPow, ' Machine Ep: ' , Dep)
-    return Dep
-
-
+def approxDeriv(h, f, a):
+    return (f(a+h) - f(a))/h
 ```
