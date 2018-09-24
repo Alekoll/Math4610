@@ -20,7 +20,7 @@ For example,
 **Usage/Example:** The routine requires three arguments. The routine returns the approximated value.
 
 ```
- approxDeriv(0.0001, lambda x: X**2 - 3, 2)
+ approxDeriv(0.0001, lambda x: x**2 - 3, 2)
  ```
 Output from the line above:
 
