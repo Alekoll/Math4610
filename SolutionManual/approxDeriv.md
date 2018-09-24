@@ -11,7 +11,7 @@ For example,
 `python3 approxDeriv.py`
 
 **Description/Purpose:** This routine will approximate the derivative of a given function by using the definition of a derivative. 
-\frac{f(x+h) - f(x)}{h}
+![](http://latex.codecogs.com/gif.latex?%5Cfrac%7Bf%28x&plus;h%29-f%28x%29%29%29%7D%7Bh%7D)
 
 **Input:** There are three inputs: 
 
