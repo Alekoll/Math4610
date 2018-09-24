@@ -12,7 +12,7 @@ For example,
 
 **Description/Purpose:** the Newton's method is a root-finding algorithm that takes the function, the derivative of the function, and a nearby intial guess x0, to approximate a root. If x0 is close, 
 then x1 will be closer to the root. The algorithm can be written as:
-!{}(https://wikimedia.org/api/rest_v1/media/math/render/svg/710c11b9ec4568d1cfff49b7c7d41e0a7829a736)
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/710c11b9ec4568d1cfff49b7c7d41e0a7829a736)
 
 **Input:** This routine requires five inputs: function as a lambda expression, a as the left bound, b as the right bound, the tolerence, and maximum iterations.
 `bisection(f, a, b, tol, maxIter)`
