@@ -20,7 +20,7 @@ then x1 will be closer to the root. The algorithm can be summarized as:
 
 lambda expression are written as followed: 
 ```python3
-lambda arguments : expression `
+lambda arguments: expression `
 ```
 
 **Output:** This routine returns either a floating point number containing the root or None object indicating that maximum amount of iterations has been met and solution did not converge.
