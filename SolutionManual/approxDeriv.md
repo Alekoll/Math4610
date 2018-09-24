@@ -26,7 +26,7 @@ Output from the line above:
 
 `4.0001000000078335`
 
-**Implementation/Code:** The following code is for approxDeriv(h, f, a). Make sure to import cmath
+**Implementation/Code:** The following code is for approxDeriv(h, f, a).
 
 ```
 def approxDeriv(h, f, a):
