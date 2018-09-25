@@ -1,6 +1,6 @@
 # Software Manual For Hybrid Newton Method
 
-**Routine Name:** .py
+**Routine Name:** hybridPython.py
  
 **Author:** Alex Collantes
  
