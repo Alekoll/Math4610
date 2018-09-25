@@ -17,7 +17,7 @@ For example,
 
 lambda expression are written as followed: ``` lambda arguments : expression ```
 
-**Output:** This routine returns either a floating point number containing the root or None object indicating that the interval does not contain the root.
+**Output:** This routine returns either a list of floating point numbers containing a smaller interval or None object indicating that the interval does not contain the root.
 
 **Usage/Example:** The routine requires five arguments. The routine returns the root value or None object.
 
