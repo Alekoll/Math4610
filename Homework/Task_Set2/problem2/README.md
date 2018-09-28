@@ -2,7 +2,12 @@
 
 ## Location of the Solution Manuals
 
+[Approximate Derivative Manual]()
+
 ## Location of the Routines
+
+[Approximate Derivative Routine]()
+[Test Code for problem 2]()
 
 ### Description:
 in the numerical solution of differential equations, the approximation above is used quite often. Write code that implements this approximation for various values of the paramter 
