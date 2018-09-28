@@ -5,19 +5,18 @@ from openpyxl import Workbook
 import approxDeriv, relError, absError, DmacEp
 
 def EvaluateApprox():
-    
+    #initalize 
     i = 0
     h = 1
     aList = []
     rList = []
     apList = []
     hList = []
-    
-    exact = [4]
-    HeaderList = ["H:", "ApproxDeriv:", "Exact:", "Absolute:", "Relative:"]
-    print(HeaderList)
     ab = 1
     rel = 1
+
+    #We are creating a while loop that will reduce h by half every time. We will continue until abserror no longer improves
+
     while (ab != 0):
         i += 1
         approxD = approxDeriv.approxDeriv(h, lambda x: x**3 + 2*x**2 - 3*x, 1)
@@ -28,6 +27,8 @@ def EvaluateApprox():
         hList.append(h)
         print("{0:1E} {1:2E} {2:3E} {3:4E} {4:5E}".format(h, approxD, 4, ab, rel))
         h *= .5  
+    
+    #opening a workbook and adding the values of h, absError, relError into their own columns in xlsx file.
     wb = Workbook()
     sheet = wb.active
     r = 1
