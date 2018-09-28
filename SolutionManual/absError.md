@@ -1,4 +1,4 @@
-# Software Manual For Double Precision
+# Software Manual For Absolute Error
 
 **Routine Name:** absError
  
