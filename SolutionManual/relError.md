@@ -29,7 +29,7 @@ Output from the line above:
 
 `3.0477314336577383e-07`
 
-**Implementation/Code:** The following code is for relError(x,y). Make sure to import cmath
+**Implementation/Code:** The following code is for relError(x,y). 
 
 ```
 def relError(x, y):
