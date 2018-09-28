@@ -1,6 +1,6 @@
 # Write Routines That Compute Absolute and Relative Error
 
-## Locations for the software manuals.
+## Locations for the Software Manuals.
 
 [Absolute Error Manual]()
 
