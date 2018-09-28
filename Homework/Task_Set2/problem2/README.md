@@ -15,6 +15,7 @@ in the numerical solution of differential equations, the approximation above is 
 h tends to zero. Graph the results starting with h = 1 and then dividing h by two until the approximation fails to get better.
 
 ## Results:
-The function used to approximate f(x) = x^3 + 2x^2 - 3x
+The function used to approximate: f(x) = x^3 + 2x^2 - 3x
+
 [PDF containing Results](https://github.com/Alekoll/Math4610/blob/master/Homework/Task_Set2/problem2/TestApprox2.pdf)
 
