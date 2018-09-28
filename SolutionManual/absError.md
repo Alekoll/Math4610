@@ -29,7 +29,7 @@ Output from the line above:
 
 `1.828459045061237e-06`
 
-**Implementation/Code:** The following code is for DmacEps(). Make sure to import cmath
+**Implementation/Code:** The following code is for DmacEps().
 
 ```
 def absError(x, y):
