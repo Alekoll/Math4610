@@ -1,4 +1,4 @@
-# Investigate the Probelm with Finite Precision by Approximating the Derivative of functions
+# Investigate the Problem with Finite Precision by Approximating the Derivative of functions
 
 ## Location for Solution Manuals
 
