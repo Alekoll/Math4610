@@ -1,9 +1,17 @@
 # Write Routines That Compute Absolute and Relative Error
 
-## Locations for the software manuals and routines.
+## Locations for the software manuals.
 
-[Absolute Error Manual]()          [Absolute Error Routine]()
+[Absolute Error Manual]()
 
-[Relative Error Manual]()          [Relative Error Routine]()
+[Relative Error Manual]()
+
+## Location of the Routines
+
+[Absolute Error Routine]()
+
+[Relative Error Routine]()
+
+
 
 
