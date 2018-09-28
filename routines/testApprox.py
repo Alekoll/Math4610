@@ -25,6 +25,7 @@ def EvaluateApprox():
         aList.append(ab)
         rList.append(rel)
         hList.append(h)
+        apList.append(approxD)
         print("{0:1E} {1:2E} {2:3E} {3:4E} {4:5E}".format(h, approxD, 4, ab, rel))
         h *= .5  
     
@@ -34,6 +35,10 @@ def EvaluateApprox():
     r = 1
     for h in hList:
         sheet.cell(row= r, column=1).value = h
+        r += 1
+    r = 1
+    for ap in apList:
+        sheet.cell(row=r, column= 4).value = ap
         r += 1
     r = 1
     for a in aList:
