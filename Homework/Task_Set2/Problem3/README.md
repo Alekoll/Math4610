@@ -11,8 +11,5 @@
  
 ## Part B
   
-  Approximate the derivative of f(x) = sin(x) where x0 = 0 as h -> 0. Reevaluate the sin(x) by using Taylor series expansion.
-  
-  ### Results
-  
-    The computational difference can be found [here]()
+  Approximate the derivative of f(x) = sin(x) where x0 = 0 as h -> 0. Reevaluate the sin(x) by using Taylor series expansion. The computational difference can be found [here]()
+
