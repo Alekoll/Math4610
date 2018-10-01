@@ -10,7 +10,7 @@ For example,
 
 `python3 absError.py`
 
-**Description/Purpose:** This routine will compute the float precision value of the difference between a machine precision number, x, and an "exact" value, y. Using the definition of abslute error: |x-y|.
+**Description/Purpose:** This routine will compute the float precision value of the difference between a machine precision number, x, and an "exact" value, y. Using the definition of abslute error: |y-x|.
 
 **Input:** This routine requires two inputs: Approximate value, and an Exact value.
 `absError(x, y)`
