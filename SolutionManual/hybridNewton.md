@@ -12,7 +12,7 @@ For example,
 
 **Description/Purpose:** the Hybrid Newton method is a root-finding algorithm that combines the bisection method and newton method together to get faster convergence.
 
-**Input:** This routine requires six inputs: function as a lambda expression, the derivative, a as the left bound, b as the right bound, tolerence, and maximum iterations.
+**Input:** This routine requires six inputs: function as a lambda expression, the derivative as a lambda expression, a as the left bound, b as the right bound, tolerence, and maximum iterations.
 `HybridNewton(f, fprime, a, b, tol, maxIter)`
 
 lambda expression are written as followed: 
@@ -27,11 +27,18 @@ lambda arguments: expression `
 ```python3
  HybridNewton(lambda x: x**2 - 3, lambda x: 2*x,-100,-1, pow(10, -15), 15)
  ```
-Output from the code above:
+ 
+ ```python3
+ hyNewton2 = hybridNewton.HybridNewton(functionSin, functionCos, 1, 1.5, tol, maxIter)
+ ```
+Output from the first code above:
 
 `-1.7320508075688772`
 
-**Implementation/Code:** The following code is for HybridNewton(f,fprime, a, b, tol, maxIter)
+Output from the second code above:
+ `1.0`
+
+**Implementation/Code:** The following code is for HybridNewton(f,fprime, a, b, tol, maxIter). 
 
 ```python3
 
