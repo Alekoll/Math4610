@@ -29,7 +29,7 @@ lambda arguments: expression `
  ```
  
  ```python3
- hyNewton2 = hybridNewton.HybridNewton(functionSin, functionCos, 1, 1.5, tol, maxIter)
+ HybridNewton(lambda x : math.sin(math.pi * x), lambda x : math.pi * math.cos(math.pi * x), 1, 1.5, pow(10, -15), 15)
  ```
 Output from the first code above:
 
