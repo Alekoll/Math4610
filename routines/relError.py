@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
 
-# x is the approxiamte value, and y is the exact value
+# y is absolute, and x is the approximate value
 def relError(x, y):
-    return abs(x - y)/abs(x)
+    return abs((y-x)/y)

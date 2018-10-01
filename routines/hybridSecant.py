@@ -3,7 +3,7 @@
 import bisection, secant
 
 def hybridSecant(f, a, b, tol, maxIter):
-    error = 10 * tol
+    
     i = 0
     sec = None
     x = bisection.bisection(f, a, b, tol, 4)
@@ -26,4 +26,4 @@ def hybridSecant(f, a, b, tol, maxIter):
             xa = x[0]
             xb = x[1]
         
-print(hybridSecant(lambda x: x**2 - 3,-100, -1, pow(10, -15), 15))
+

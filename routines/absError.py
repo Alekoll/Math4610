@@ -4,5 +4,5 @@
 # f is the solution to a function
 def absError(x, y):
     
-    return abs(x - y)
+    return abs(y - x)
 
