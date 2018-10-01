@@ -10,7 +10,7 @@ For example,
 
 `python3 relError.py`
 
-**Description/Purpose:** This routine will compute the float precision value of the difference between a machine precision number, x, and an "exact" value, y divided by x Using the definition of relative error: |x-y|/|x|.
+**Description/Purpose:** This routine will compute the float precision value of the difference between a machine precision number, x, and an "exact" value, y divided by x Using the definition of relative error: |y-x|/|y|.
 
 **Input:** This routine requires two inputs: Approximate value, and an Exact value.
 `relError(x, y)`
@@ -34,6 +34,6 @@ Output from the line above:
 ```
 def relError(x, y):
     
-    return abs(x - y)/abs(x)
+    return abs((y-x)/y)
 
 ```
