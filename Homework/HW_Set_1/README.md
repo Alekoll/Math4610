@@ -1,21 +1,21 @@
 # Contains all the problems to problem set 1
 
-1. [Problem]()
+1. [Machine Precision]()
 
-1. [Problem]()
+1. [Create Repositiory]()
 
-1. [Problem]()
+1. [Shared Library]()
 
-1. [Problem]()
+1. [Hello World Omp]()
 
-1. [Problem]()
+1. [Taylor Series Expansion]()
 
-1. [Problem]()
+1. [Integration]()
 
-1. [Problem]()
+1. [Quadratic Formula]()
 
-1. [Problem]()
+1. [Initial Values]()
 
-1. [Problem]()
+1. [Machine precision Influenced]()
 
-1. [Problem]()
+1. [Graph the solutions]()
