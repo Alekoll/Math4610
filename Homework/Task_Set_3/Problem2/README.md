@@ -2,19 +2,19 @@
 
 ## Location of the Software Manuals:
   
-  [Absolute Error l1](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L1Norm.md)
+  [Absolute Error l1](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L1AbsError.md)
   
-  [Relative Error l1](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L2Norm.md)
-  
-  
-  [Absolute Error l2](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L1Norm.md)
-  
-  [Relative Error l2](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L2Norm.md)
+  [Relative Error l1](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L1RelError.md)
   
   
-  [Absolute Error linf](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L1Norm.md)
+  [Absolute Error l2](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L2AbsError.md)
   
-  [Relative Error linf](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L2Norm.md)
+  [Relative Error l2](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L2RelError.md)
+  
+  
+  [Absolute Error linf](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/LinfAbsError.md)
+  
+  [Relative Error linf](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/LinfRelError.md)
   
   
 ## Location of the Routines:
