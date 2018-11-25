@@ -12,13 +12,13 @@
 
 1. [Integration](https://github.com/Alekoll/Math4610/blob/master/Homework/HW_Set_1/Problem_4-6_8-9/Integrate.pdf)
 
-1. [Quadratic Formula]()
+1. [Quadratic Formula](https://github.com/Alekoll/Math4610/tree/master/Homework/HW_Set_1/problem_7)
 
 1. [Initial Values](https://github.com/Alekoll/Math4610/blob/master/Homework/HW_Set_1/Problem_4-6_8-9/simpleIntial.pdf)
 
-1. [Machine precision Influenced]()
+1. [Machine precision Influenced]() NOT DONE
 
-1. [Graph the solutions]()
+1. [Graph the solutions]() NOT DONE
 
 ## [Go Back](https://github.com/Alekoll/Math4610)
 
