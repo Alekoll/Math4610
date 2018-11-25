@@ -35,7 +35,7 @@ Output from the line above:
 
 `1225.0`
 
-**Implementation/Code:** The following code is for vector subtraction:
+**Implementation/Code:** The following code is for vector inner product:
 
 ```python3 
 
