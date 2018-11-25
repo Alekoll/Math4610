@@ -38,8 +38,8 @@ Output from the line above:
 import lengthnorms, relError, absError
 
 def AbsErrorLengthNorm2(vectorX, vectorY):
-    lengthX = lengthnorms.LengthNorm1(vectorX)
-    lengthY = lengthnorms.LengthNorm1(vectorY)
+    lengthX = lengthnorms.LengthNorm2(vectorX)
+    lengthY = lengthnorms.LengthNorm2(vectorY)
 
     return absError.absError(lengthX, lengthY)
 ```
