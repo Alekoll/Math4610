@@ -1,6 +1,6 @@
-# Software Manual For Absolute Error
+# Software Manual For Computing Absolute Error of l2 norm.
 
-**Routine Name:** absError
+**Routine Name:** AbsErrorLengthNorm2
  
 **Author:** Alex Collantes
  
@@ -8,32 +8,38 @@
 
 For example,
 
-`python3 absError.py`
+`python3 VectorErrors.py`
 
-**Description/Purpose:** This routine will compute the float precision value of the difference between a machine precision number, x, and an "exact" value, y. Using the definition of abslute error: |y-x|.
+**Description/Purpose:** This routine will compute the absolute error of two vectors where one vector is an approximate of the other.
 
-**Input:** This routine requires two inputs: Approximate value, and an Exact value.
-`absError(x, y)`
+**Input:** This routine requires two inputs: Approximate vector as a list, and an Exact vector as a list.
+`AbsErrorLengthNorm2(approx, exact)`
 
-**Output:** This routine returns a float precision value of |x-y|. below is an expmple of the output.
+**Output:** This routine returns a float precision value. below is an expmple of the output.
 ```
-1.828459045061237e-06
+0.0012340000000001794
 ```
 
 **Usage/Example:** The routine requires two arguement. The routine returns float value of the absolute error.
-```
-absE = absError(2.71828, cmath.exp(1))
-print(absE)
+```python3
+Exact = [1,2,3,4,5,6,7,8,9]
+Approx = [.987654,1.98888,2.988878, 3.9999857, 4.985443, 5.97979, 6.989978544, 7.9987, 8.998766]
+
+absNorm2 = VectorErrors.AbsErrorLengthNorm2(Approx, Exact)
  ```
 Output from the line above:
 
-`1.828459045061237e-06`
+`0.0012340000000001794`
 
-**Implementation/Code:** The following code is for absError(x,y).
+**Implementation/Code:** The following code is for absolute error of l2 norms.
 
-```
-def absError(x, y):
-    
-    return abs(x - y)
+```python3
 
+import lengthnorms, relError, absError
+
+def AbsErrorLengthNorm2(vectorX, vectorY):
+    lengthX = lengthnorms.LengthNorm1(vectorX)
+    lengthY = lengthnorms.LengthNorm1(vectorY)
+
+    return absError.absError(lengthX, lengthY)
 ```
