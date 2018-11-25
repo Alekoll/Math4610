@@ -1,6 +1,6 @@
-# Software Manual For l1 Norm of a Matrix
+# Software Manual For linf Norm of a Matrix
 
-**Routine Name:** OneNorm.py
+**Routine Name:** InfNorm.py
  
 **Author:** Alex Collantes
  
@@ -10,47 +10,46 @@ For example,
 
 `python3 MatrixNorms.py`
 
-**Description/Purpose:** A norm is a function that assigns a length to a matrix. Frobenius Norm is defined by:
+**Description/Purpose:** A norm is a function that assigns a length to a matrix. linf Norm is defined by:
 
-![](http://mathworld.wolfram.com/images/equations/MatrixNorm/NumberedEquation3.gif)
+![](http://mathworld.wolfram.com/images/equations/MatrixNorm/NumberedEquation5.gif)
 
 **Input:** This routine requires a 2d List.
 `Frobenius(matrix)`
 
 **Output:** This routine returns the norm as a float:
 
-`25.0`
+`39.0`
 
 **Usage/Example:** The routine requires single arguments. The routine returns the length value.
 
 ```python3
  A = [[1,2,3],[5,6,8],[12,13,14]]
-print(OneNorm(A))
+print(Inf(A))
  ```
 Output from the code above:
 
 `
-25.0
+39.0
 `
 
-**Implementation/Code:** The following code is for finding l1 norm.
+**Implementation/Code:** The following code is for finding linf norm.
 
 ```python3
 
-def OneNorm(matrix):
+def InfNorm(matrix):
     row = len(matrix)
     col = len(matrix[0])
     norm = 0.0
-    colSum = []
+    rowSum = []
 
-    for j in range(col):
-        for i in range(row):
+    for i in range(row):
+        for j in range(col):
             norm += abs(matrix[i][j])
-        colSum.append(norm)
+        rowSum.append(norm)
         norm = 0.0
     
-    norm = max(colSum)
+    norm = max(rowSum)
     return norm
-
-
+    
 ```
