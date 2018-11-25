@@ -11,6 +11,9 @@
 ## Location of the Routines:
   
   [Matrix Norms](https://github.com/Alekoll/Math4610/blob/master/routines/lengthnorms.py)
+  
+## Location of the Test Code:
+  [Test Code]()
 
 ## Descripion:
   Given a Matrix of arbitrary length, compute the norms and return as a floating point numbers.
