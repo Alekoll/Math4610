@@ -6,7 +6,7 @@
   
   [l2 Norm Manual](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L2Norm.md)
   
-  [linf Norm Manual](https://github.com/Alekoll/Math4610/edit/master/SolutionManual/Linf.md)
+  [linf Norm Manual](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/Linf.md)
   
 ## Location of the Routines:
   
