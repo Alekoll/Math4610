@@ -1,6 +1,6 @@
-# Software Manual For Vector Addition
+# Software Manual For Vector Subtraction
 
-**Routine Name:** Addition
+**Routine Name:** Subtraction
  
 **Author:** Alex Collantes
  
@@ -10,16 +10,16 @@ For example,
 
 `python3 VectorOperations.py`
 
-**Description/Purpose:** Given A, B as vectors, Vector addition is defined as:
+**Description/Purpose:** Given A, B as vectors, Vector subtraction is defined as:
 
-![](http://mathworld.wolfram.com/images/equations/VectorAddition/NumberedEquation1.gif)
+![](http://mathworld.wolfram.com/images/equations/VectorDifference/NumberedEquation1.gif)
 
 **Input:** This routine requires two inputs as list: x,y
-`Additon(x, y)`
+`Subtraction(x, y)`
 
 **Output:** This routine returns a vector as a list.
 ```
-[35, 51, 60]
+[11, 17, 46]
 ```
 
 **Usage/Example:** The routine requires two arguement. The routine returns a vector as a list.
@@ -28,23 +28,24 @@ For example,
  x = [23,34,53]
  y = [12, 17, 7]
 
- additon = VectorOperations.Addition(x,y)
+ subtraction = VectorOperations.Subtraction(x,y)
  ```
 Output from the line above:
 
-`[35, 51, 60]`
+`[11, 17, 46]`
 
-**Implementation/Code:** The following code is for vector addition:
+**Implementation/Code:** The following code is for vector subtraction:
 
 ```python3 
 
-def Addition(x,y):
+def Subtraction(x,y):
     length = len(x)
     z = []
 
     for i in range(length):
-        z.append(x[i] + y[i])
+        z.append(x[i] - y[i])
 
     return z
+
 
 ```
