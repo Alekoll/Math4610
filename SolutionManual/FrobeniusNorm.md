@@ -18,7 +18,8 @@ For example,
 `Frobenius(matrix)`
 
 **Output:** This routine returns the norm as a float:
-``
+
+`25.45584412271571`
 
 **Usage/Example:** The routine requires single arguments. The routine returns the length value.
 
