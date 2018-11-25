@@ -2,11 +2,11 @@
 
 ## Location of the Software Manuals:
   
-  [l1 Norm Manual]()
+  [l1 Norm Manual](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L1Norm.md)
   
-  [l2 Norm Manual]()
+  [l2 Norm Manual](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L2Norm.md)
   
-  [linf Norm Manual]()
+  [linf Norm Manual](https://github.com/Alekoll/Math4610/edit/master/SolutionManual/Linf.md)
   
 ## Location of the Routines:
   
