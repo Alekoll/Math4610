@@ -2,7 +2,7 @@
 
 ## Location of the Software Manuals:
   
-  [Additon](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/VectorAddition.md)
+  [Addition](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/VectorAddition.md)
   
   [Subtraction](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/VectorSubtraction.md)
   
