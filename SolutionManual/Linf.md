@@ -1,4 +1,4 @@
-# Software Manual For L2 Norm
+# Software Manual For Linfity Norm
 
 **Routine Name:** lengthnorms.py
  
@@ -10,12 +10,12 @@ For example,
 
 `python3 lengthnorms.py`
 
-**Description/Purpose:** A norm is a function that assigns a length to a vector. L2 is defined by:
+**Description/Purpose:** A norm is a function that assigns a length to a vector. Linf is defined by:
 
-![](http://mathworld.wolfram.com/images/equations/L2-Norm/NumberedEquation2.gif)
+![](http://mathworld.wolfram.com/images/equations/L-Infinity-Norm/NumberedEquation2.gif)
 
 **Input:** This routine requires a list as a vector.
-`LengthNorm2(vector)`
+`LengthNormInf(vector)`
 
 **Output:** This routine returns the length.
 
@@ -23,24 +23,20 @@ For example,
 
 ```python3
  testList = [3,54,656,43,23,64,76,32,1,25,45.232,4565.7685,674.9876]
- LengthNorm2(testList)
+ LengthNormInf(testList)
  ```
 Output from the code above:
 
 `
-4663.802867786117
+4565.7685
 `
 
-**Implementation/Code:** The following code is for finding L2 norm.
+**Implementation/Code:** The following code is for finding Linf norm.
 
 ```python3
+def LengthNormInf(vector):
 
-def LengthNorm2(vector):
-    
-    length2 = 0.0
+    lengthInf = max(vector)
 
-    for element in vector:
-        length2 += abs(element)**2
-    
-    return length2**(1/2)
+    return float(lengthInf)
 ```
