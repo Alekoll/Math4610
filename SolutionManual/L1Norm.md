@@ -1,6 +1,6 @@
-# Software Manual For Newton Method
+# Software Manual For l1 Norm
 
-**Routine Name:** newtonMethod.py
+**Routine Name:** lengthnorms.py
  
 **Author:** Alex Collantes
  
@@ -8,12 +8,11 @@
 
 For example,
 
-`python3 newtonMethod.py`
+`python3 lengthnorms.py`
 
-**Description/Purpose:** the Newton's method is a root-finding algorithm that takes a function, the derivative of the function, and a nearby intial guess x0, to approximate a root. If x0 is close, 
-then x1 will be closer to the root. The algorithm can be summarized as:
+**Description/Purpose:** A norm is a function that assigns a length to a vector. L1 is defined by:
 
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/710c11b9ec4568d1cfff49b7c7d41e0a7829a736)
+![](http://mathworld.wolfram.com/images/equations/L1-Norm/NumberedEquation2.gif)
 
 **Input:** This routine requires five inputs: function as a lambda expression, derivative of the function as a lambda expression, x0 as an inital guess, the tolerence, and maximum iterations.
 `NewtonMethod(f, fprime, x0, tol, maxIter)`
