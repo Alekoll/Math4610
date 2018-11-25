@@ -13,6 +13,7 @@ For example,
 **Description/Purpose:** Given X, Y as vectors, Vector inner product is defined as:
 
 ![](http://mathworld.wolfram.com/images/equations/DotProduct/Inline28.gif) =
+
 ![](http://mathworld.wolfram.com/images/equations/DotProduct/Inline30.gif)
 
 **Input:** This routine requires two inputs as list: x,y
