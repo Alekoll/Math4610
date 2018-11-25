@@ -21,7 +21,7 @@ For example,
 ```
 
 **Usage/Example:** The routine requires two arguement. The routine returns float value of the absolute error.
-```
+```python3
 Exact = [1,2,3,4,5,6,7,8,9]
 Approx = [.987654,1.98888,2.988878, 3.9999857, 4.985443, 5.97979, 6.989978544, 7.9987, 8.998766]
 
@@ -33,8 +33,7 @@ Output from the line above:
 
 **Implementation/Code:** The following code is for absolute error of l1 norms.
 
-```
-#!/usr/bin/env python3
+```python3
 
 import lengthnorms, relError, absError
 
