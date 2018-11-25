@@ -2,7 +2,7 @@
 
 import VectorErrors
 
-#Test the relative and absolute error on the norms of given vectos
+#Test the relative and absolute error on the norms of given vectors
 
 def VectorErrorsTest():
     Exact = [1,2,3,4,5,6,7,8,9]
@@ -22,3 +22,4 @@ def VectorErrorsTest():
     
 
     
+VectorErrorsTest()

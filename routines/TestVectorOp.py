@@ -11,9 +11,9 @@ def testVectorOp():
     subtraction = op.Subtraction(x,y)
     innerProduct = op.InnerProduct(x,y)
     crossProduct = op.CrossProduct(x,y)
-    scalarProduct = op.ScalarProduct(x, .5)
+    scalarProduct = op.ScalarMultiplication(x, .5)
 
-    print(additon, subtraction, innerProduct, crossProduct, scalarProduct, sep='\n')
+    print(additon, subtraction, innerProduct, crossProduct, x, sep='\n')
 testVectorOp()
 
 

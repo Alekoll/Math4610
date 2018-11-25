@@ -23,14 +23,13 @@ def Subtraction(x,y):
     return z
 
 # multiple a scalar into the vector
-def ScalarProduct(x, scalar):
+def ScalarMultiplication(x, scalar):
     
     for i in range(len(x)):
         
-        x[i] *= scalar
-        
+        x[i] *= scalar    
+    
 
-    return x
 
 # Return a float with the inner product of vectors x, y
 def InnerProduct(x, y):
