@@ -33,7 +33,8 @@ Output from the line above:
 
 **Implementation/Code:** The following code is for absolute error of l1 norms.
 
-```#!/usr/bin/env python3
+```
+#!/usr/bin/env python3
 
 import lengthnorms, relError, absError
 
