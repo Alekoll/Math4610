@@ -1,4 +1,4 @@
-# Software Manual For l1 Norm
+# Software Manual For L2 Norm
 
 **Routine Name:** lengthnorms.py
  
@@ -10,12 +10,12 @@ For example,
 
 `python3 lengthnorms.py`
 
-**Description/Purpose:** A norm is a function that assigns a length to a vector. L1 is defined by:
+**Description/Purpose:** A norm is a function that assigns a length to a vector. L2 is defined by:
 
-![](http://mathworld.wolfram.com/images/equations/L1-Norm/NumberedEquation2.gif)
+![](http://mathworld.wolfram.com/images/equations/L2-Norm/NumberedEquation2.gif)
 
 **Input:** This routine requires a list as a vector.
-`LengthNorm1(vector)`
+`LengthNorm2(vector)`
 
 **Output:** This routine returns the length.
 
@@ -23,24 +23,24 @@ For example,
 
 ```python3
  testList = [3,54,656,43,23,64,76,32,1,25,45.232,4565.7685,674.9876]
- LengthNorm1(testList)
+ LengthNorm2(testList)
  ```
 Output from the code above:
 
 `
-6262.9881000000005
+4663.802867786117
 `
 
-**Implementation/Code:** The following code is for finding l1 norm.
+**Implementation/Code:** The following code is for finding L2 norm.
 
 ```python3
 
-def LengthNorm1(vector):
+def LengthNorm2(vector):
     
-    length1 = 0.0
+    length2 = 0.0
 
     for element in vector:
-        length1 += abs(element)
-
-    return length1
+        length2 += abs(element)**2
+    
+    return length2**(1/2)
 ```
