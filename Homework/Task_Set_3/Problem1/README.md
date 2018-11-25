@@ -10,12 +10,10 @@
   
 ## Location of the Routines:
   
-  [l1 Norm Routine]()
-  
-  [l2 Norm Routine]()
-  
-  [linf Norm Routine]()
+  [Vector Norms](https://github.com/Alekoll/Math4610/blob/master/routines/lengthnorms.py)
 
 ## Descripion:
   Given a vector of arbitrary length, compute the norms and return as a floating point numbers.
+  
+## [GO BACK](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_3)
 
