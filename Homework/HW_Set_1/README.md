@@ -3,9 +3,10 @@
 1. [Machine Precision](https://github.com/Alekoll/Math4610/tree/master/Homework/HW_Set_1/Problem_1)
 
 1. [Create Repositiory](https://github.com/Alekoll/Math4610)
+   
    Redirect you back to the main repository.
 
-1. [Shared Library]()
+1. [Shared Library](https://github.com/Alekoll/Math4610/tree/master/Homework/HW_Set_1/Problem_3/hw1_prob3)
 
 1. [Hello World Omp]()
 
