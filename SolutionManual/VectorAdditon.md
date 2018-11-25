@@ -1,6 +1,6 @@
-# Software Manual For Absolute Error
+# Software Manual For Vector Addition
 
-**Routine Name:** absError
+**Routine Name:** Addition
  
 **Author:** Alex Collantes
  
@@ -8,32 +8,43 @@
 
 For example,
 
-`python3 absError.py`
+`python3 VectorOperations.py`
 
-**Description/Purpose:** This routine will compute the float precision value of the difference between a machine precision number, x, and an "exact" value, y. Using the definition of abslute error: |y-x|.
+**Description/Purpose:** Given A, B as vectors, Vector addition is defined as:
 
-**Input:** This routine requires two inputs: Approximate value, and an Exact value.
-`absError(x, y)`
+![](http://mathworld.wolfram.com/images/equations/VectorAddition/NumberedEquation1.gif)
 
-**Output:** This routine returns a float precision value of |x-y|. below is an expmple of the output.
+**Input:** This routine requires two inputs as list: x,y
+`Additon(x, y)`
+
+**Output:** This routine returns a vector as a list.
 ```
-1.828459045061237e-06
+[35, 51, 60]
 ```
 
-**Usage/Example:** The routine requires two arguement. The routine returns float value of the absolute error.
-```
-absE = absError(2.71828, cmath.exp(1))
-print(absE)
+**Usage/Example:** The routine requires two arguement. The routine returns a vector as a list.
+```python3
+
+ x = [23,34,53]
+ y = [12, 17, 7]
+
+ additon = VectorOperations.Addition(x,y)
  ```
 Output from the line above:
 
-`1.828459045061237e-06`
+`[35, 51, 60]`
 
-**Implementation/Code:** The following code is for absError(x,y).
+**Implementation/Code:** The following code is for vector addition:
 
-```
-def absError(x, y):
-    
-    return abs(x - y)
+```python3 
+
+def Addition(x,y):
+    length = len(x)
+    z = []
+
+    for i in range(length):
+        z.append(x[i] + y[i])
+
+    return z
 
 ```
