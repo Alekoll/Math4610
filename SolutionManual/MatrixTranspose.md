@@ -15,6 +15,7 @@ For example,
 ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/9b0864ad54decb7f1b251512de895b40545facf5)
 
 **Input:** This routine requires one input as 2-D list: A
+
 `Transpose(A)`
 
 **Output:** This routine returns a Matrix as a 2d list where the rows and columns have been swapped
