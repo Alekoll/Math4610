@@ -18,7 +18,7 @@ For example,
 
 `Scalar(A, alpha)`
 
-**Output:** This routine returns a float of the product of the main diagonal:
+**Output:** This routine returns None Object since it's a modification to A, but if printed this is the output:
 ```
 [10, 20, 30]
 [50, 70, 110]
