@@ -16,7 +16,7 @@ For example,
 
 **Input:** This routine requires two inputs Matrix and Vector :
 
-`Scalar(A, x)`
+`VectorMatrixMultiplication(A, x)`
 
 **Output:** This routine returns a list contain the product:
 ```
