@@ -1,6 +1,6 @@
-# Software Manual For Matrix Addition
+# Software Manual For Matrix Subtraction
 
-**Routine Name:** Matrix Addition
+**Routine Name:** Matrix Subtraction
  
 **Author:** Alex Collantes
  
@@ -10,18 +10,19 @@ For example,
 
 `python3 MatrixOperations.py`
 
-**Description/Purpose:** Given A, B as nxn Matrices, the sum is  is defined by adding the entries of the same indices:
+**Description/Purpose:** Given A, B as nxn Matrices, the difference is  is defined by subtracting the entries of the same indices: C = A - B, C_ij = A_ij - B_ij
 
-![](http://mathworld.wolfram.com/images/equations/MatrixAddition/NumberedEquation2.gif)
 
-**Input:** This routine requires two inputs as 2-D list: x,y
-`Additon(A,B)`
+
+**Input:** This routine requires two inputs as 2-D list: A,B
+`Subtraction(A,B)`
 
 **Output:** This routine returns a Matrix as a 2d list.
 ```
-[3, 6, 9]
-[8, 13, 20]
-[18, 27, 34]
+[-1, -2, -3]
+[2, 1, 2]
+[8, 7, 4]
+
 ```
 
 **Usage/Example:** The routine requires two arguement. The routine returns a Matrix as a 2d list.
@@ -31,29 +32,31 @@ For example,
  
  B = [[2,4,6],[3,6,9],[5,10,15]]
 
- C = Addition(A,B)
+ C = Subtraction(A,B)
 
 
  ```
 Output from the line above:
 
-`[3, 6, 9]
-
-[8, 13, 20]
-
-[18, 27, 34]`
+`[-1, -2, -3]
+[2, 1, 2]
+[8, 7, 4]
+`
 
 **Implementation/Code:** The following code is for Matrix addition:
 
 ```python3 
 
-def Addition(A, B):
+
+def Subtraction(A, B):
     row = len(A)
     col = row
+
     C = [[0]* row for _ in range(row)]
+
     for i in range(row):
         for j in range(col):
-            C[i][j] = A[i][j] + B[i][j]
+            C[i][j] = A[i][j] - B[i][j]
     return C
     
 ```
