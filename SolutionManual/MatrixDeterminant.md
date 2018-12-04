@@ -28,7 +28,7 @@ determinant = Det(A)
  ```
 Output from the line above:
 
-`27.0
+`-10.0
 `
 
 **Implementation/Code:** The following code is for Determinant:
