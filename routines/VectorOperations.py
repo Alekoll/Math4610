@@ -50,6 +50,12 @@ def CrossProduct(x, y):
     z3 = (x[0] * y[1]) - (x[1] * y[0])
     
     return [z1,z2,z3]
+def Magnitude(v):
+    x = 0
+    for i in range(len(v)):
+        x += v[i] * v[i]
+    return (x**(.5))
+
 
 
 

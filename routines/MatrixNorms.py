@@ -23,7 +23,7 @@ def OneNorm(matrix):
             norm += abs(matrix[i][j])
         colSum.append(norm)
         norm = 0.0
-    print(colSum)
+    
     norm = max(colSum)
     return norm
 
@@ -38,16 +38,8 @@ def InfNorm(matrix):
             norm += abs(matrix[i][j])
         rowSum.append(norm)
         norm = 0.0
-    print(rowSum)
+    
     norm = max(rowSum)
     return norm
-
-
-A = [[1,2,3],[5,6,8],[12,13,14]]
-
-for i in range(3):
-    print(A[i])
-
-print (Frobenius(A), OneNorm(A), InfNorm(A))
 
 
