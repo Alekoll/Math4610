@@ -16,7 +16,7 @@
 
 1. [Initial Values](https://github.com/Alekoll/Math4610/blob/master/Homework/HW_Set_1/Problem_4-6_8-9/simpleIntial.pdf)
 
-1. [Machine precision Influenced](https://github.com/Alekoll/Math4610/blob/master/Homework/HW_Set_1/Problem_4-6_8-9/Research.md) NOT DONE
+1. [Machine precision Influenced](https://github.com/Alekoll/Math4610/blob/master/Homework/HW_Set_1/Problem_4-6_8-9/Research.md)
 
 1. [Graph the solutions]() NOT DONE
 
