@@ -18,6 +18,6 @@
 
 1. [Hybrid Secant Method](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set2/Problem4-9)
 
-1. [Bracketing of Roots Research](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set2/Problem4-9)
+1. [Bracketing of Roots Research](https://github.com/Alekoll/Math4610/blob/master/Homework/Task_Set2/Problem10/bracket.md)
 
 ## [GO BACK](https://github.com/Alekoll/Math4610)
