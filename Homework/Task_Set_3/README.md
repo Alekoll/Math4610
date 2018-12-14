@@ -16,7 +16,7 @@
 
 1. [Implementation Vector Operations](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_3/Problem3) It's going to send you to Problem 3 Readme since they are already implemented.
 
-1. [Vector Basis](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_3/Problem9) NOT DONE
+1. [Vector Basis](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_3/Problem9) 
 
 1. [Kronecker Product Research](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_3/Problem10)
 
