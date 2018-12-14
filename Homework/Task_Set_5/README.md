@@ -1,6 +1,6 @@
 # Problem Set 5
 
-1. [Induced Matrix Norms](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_5/Problem1) Redirects you to homework set 3 problem 2
+1. [Induced Matrix Norms](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_3/Problem4) Redirects you to homework set 3 problem 2
 
 1. [Generate Matrices with solution](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_5/Problem1) Same as Part 1
 
