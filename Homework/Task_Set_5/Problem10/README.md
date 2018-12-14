@@ -70,7 +70,7 @@ Error: [2.3283064365386963e-10, 2.3283064365386963e-10, 2.2025778889656067e-07, 
 
 The Gradient methods take much longer than Jacobi and Gauss, but that could be that my functions are ill-conditioned.
 
-![](https://github.com/Alekoll/Math4610/blob/master/Homework/Task_Set_5/Problem10/DifferentIterative.pdf)
+[Graph here](https://github.com/Alekoll/Math4610/blob/master/Homework/Task_Set_5/Problem10/DifferentIterative.pdf)
 
 
 
