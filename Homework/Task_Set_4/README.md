@@ -20,6 +20,6 @@
 
 1. [Solving with Cholesky](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem10)
 
-1. [Online Search](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem11) NOT DONE
+1. [Online Search](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem11)
 
 ## [GO BACK](https://github.com/Alekoll/Math4610)
