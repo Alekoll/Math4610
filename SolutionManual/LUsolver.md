@@ -9,7 +9,8 @@ For example,
 
 `python3 Gauss_Elim.py`
 
-**Description/Purpose:** Given: A (n x n). By performing Gaussian Elimination to reduce the matrix into upper triangle matrix, we can solve the matrix by perform [backwards substition](https://github.com/Alekoll/Math4610/edit/master/SolutionManual/BackwardSub.md)
+**Description/Purpose:** Given: A (n x n). By performing Gaussian Elimination to reduce the matrix into [upper](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/GaussianElim.md)
+triangle matrix, we can solve the matrix by perform [backwards substition](https://github.com/Alekoll/Math4610/edit/master/SolutionManual/BackwardSub.md)
 
 **Input:** These two routines requires two inputs: as 2-D list and list: 
 
