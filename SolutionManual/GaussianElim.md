@@ -15,10 +15,12 @@ Our Algorithm for Gaussian Elimination is used to find the upper triangle matrix
 
 
 **Input:** This routine requires two inputs: as 2-D list and list: 
+
 `Upper(A,b)`
 
 
 **Output:** This routine overwrites the origanl matrix and it's solution:
+ 
  `
 [95733.61704095405, 2454.1184123621165, 3643.332798515107]
 [-0.02563486566387923, 48345.45374147545, 3035.8599393770673]
@@ -27,15 +29,19 @@ Our Algorithm for Gaussian Elimination is used to find the upper triangle matrix
  `
 
 **Usage/Example:** The routine requires two arguement. The routine returns the same modified matrix.
+
 ```python3
 Gauss_Elim.Upper(A,b)
  ```
+
 A before:
+
 
 `[95733.61704095405, 2454.1184123621165, 3643.332798515107]
 [2454.1184123621165, 48408.364737299606, 3129.2562862358072]
 [3643.332798515107, 3129.2562862358072, 69612.54272807624]
 `
+
 A after:
 
 `
