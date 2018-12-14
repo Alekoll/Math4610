@@ -63,15 +63,15 @@ def Jacobi(A,b):
 
     k = 0
     # while the difference of the Infinite norm of the difference between (Ax - b) > 1
-    while(LengthNormInf(Subtraction(VectorMatrixMultiplication(A,x),b)) > .005):
+    while(k < 15):
         for i in range(n):
             factor = 0.0
-            k +=1
+          
             for j in range(n):
-                k += 1
+             
                 if (j != i):
                     factor += A[i][j] * x[j]
-                    k +=1
+          
             x[i] = (b[i]-factor)/A[i][i]
         k += 1
     print(k)
