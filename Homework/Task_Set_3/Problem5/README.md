@@ -3,19 +3,19 @@
 
 ## Location of the Software Manuals:
 
-  [Matrix Additon]()
+  [Matrix Additon](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/MatrixAdditon.md)
   
-  [Matrix Subtraction]()
+  [Matrix Subtraction](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/MatrixSubtraction.md)
   
-  [Transposed Matrix]()
+  [Transposed Matrix](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/MatrixTranspose.md)
   
-  [Trace of a Matrix]()
+  [Trace of a Matrix](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/MatrixTrace.md)
   
-  [Scalar Matrix Multiplication]()
+  [Scalar Matrix Multiplication](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/MatrixScalar.md)
   
-  [Vector Matrix Multiplication()
+  [Vector Matrix Multiplication](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/MatrixVector.md)
   
-  [Matrix Matrix Multiplicaiton]()
+  [Matrix Matrix Multiplicaiton](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/MatrixMultiplication.md)
   
   
 ## Location of the Routines:
