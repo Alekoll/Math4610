@@ -5,7 +5,7 @@
 
 1. [Invere Power Method](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_6/Problem2) 
 
-1. [2-Condition](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_6/Problem3) NOT DONE
+1. [2-Condition](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_6/Problem3)
 
 1. [Parallel Power](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_6/Problem4) NOT DONE
 
