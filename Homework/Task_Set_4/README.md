@@ -2,7 +2,7 @@
 
 1. [Gauss Elimination (n x n)](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem1)
 
-1. [Gauss Elimination (m x n)](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem2)
+1. [Gauss Elimination (m x n)](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem1) Same as Part 1
 
 1. [Forward Substition](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem3)
 
