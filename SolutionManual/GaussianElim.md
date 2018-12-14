@@ -1,5 +1,5 @@
-# Software Manual Kronecker Product
-**Routine Name:** Kronecker Product
+# Software Manual Gaussian Elimination (n x n)
+**Routine Name:** Upper
  
 **Author:** Alex Collantes
  
@@ -7,57 +7,54 @@
 
 For example,
 
-`python3 kronecker.py`
+`python3 Gauss_Elim.py`
 
-**Description/Purpose:** Given: A,B Matices, the Kronecker producted is a generalization of the outer product. Kronecker should not be confused with traditional matrix multiplication. If A (m x n) and B (p x q), then the Kronecker product A ⊗ B is the (mp x nq) blcok matrix.
+**Description/Purpose:** Gaussian Elmination (Also known as row reduciton) is a set of steps for solving systems of linear equations by swapping two rows, scaling by a nonzero, and adding rows. It has many applications by finding the rank of a matrix, calculating determinant, finding inverse...
 
-**Input:** This routine requires two inputs as 2-D list and 2-D list: 
+Our Algorithm for Gaussian Elimination is used to find the upper triangle matrix with main. The factors of the lower Triangle matrix are also saved and a modified version of Forward substition can produce a solution.
 
-`kronecker(A,B)`
 
-**Output:** This routine returns a new Matrix.
+**Input:** This routine requires two inputs: as 2-D list and list: 
+`Upper(A,b)`
 
-```
-A = [[1,2,3],[4,5,7],[7,5,2]]
-B = [[4,5,5],[4,5,5],[5,5,5]]
 
-C = kronecker(A,B)
-```
-**Usage/Example:** The routine requires two arguement. The routine returns a Matrix as a 2d list.
+**Output:** This routine overwrites the origanl matrix and it's solution:
+ `
+[95733.61704095405, 2454.1184123621165, 3643.332798515107]
+[-0.02563486566387923, 48345.45374147545, 3035.8599393770673]
+[-0.03805698469490105, -0.06279514834240991, 69283.25119228476]
+
+ `
+
+**Usage/Example:** The routine requires two arguement. The routine returns the same modified matrix.
 ```python3
-C = kronecker(A,B)
+Gauss_Elim.Upper(A,b)
  ```
-Output from the line above:
+A before:
 
-`[0, 0, 0, 0, 0, 0, 0, 0, 0]
-[0, 4, 4, 5, 10, 15, 0, 0, 0]
-[0, 16, 16, 20, 25, 35, 0, 0, 0]
+`[95733.61704095405, 2454.1184123621165, 3643.332798515107]
+[2454.1184123621165, 48408.364737299606, 3129.2562862358072]
+[3643.332798515107, 3129.2562862358072, 69612.54272807624]
+`
+A after:
+
+`
+[95733.61704095405, 2454.1184123621165, 3643.332798515107]
+[-0.02563486566387923, 48345.45374147545, 3035.8599393770673]
+[-0.03805698469490105, -0.06279514834240991, 69283.25119228476]
 `
 
-**Implementation/Code:** The following code is for Determinant:
+**Implementation/Code:** The following code Gaussian Elimination:
 
 ```python3 
-
-def kronecker(A,B):
-    m = len(A[0])
-    n = len(A)
-
-    p = len(B[0])
-    q = len(B)
-    
-    #Create a blank matrix full of zeros
-    C = [[0 for i in range(m*p)] for i in range(n*q)]
-
-    for i in range (m):
-
-        for k in range(p):
-        
-            for j in range(n):
-
-                for l in range(q):
-
-                    C[i + l + 1][j+k +1] = A[i][j] * B[k][l]
-    
-    return C
+def Upper(A,b):
+    n = len(A[0])
+    for k in range(n-1):
+        for i in range(k+1, n):
+            factor = A[i][k]/A[k][k]
+            A[i][k] = -factor
+            for j in range(k+1, n):
+                A[i][j] = A[i][j] -(factor*A[k][j])
+            b[i] -= factor*b[k]
 
 ```
