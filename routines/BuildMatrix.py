@@ -3,21 +3,19 @@ from MatrixOperations import Transpose, MatrixMultiplication, VectorMatrixMultip
 import Jacobi, GradientMethods, GaussSeidel, PowerMethods, Gauss_Elim
 #Creates a matrix with three properties, n x n, Unified Random Variables, Symmetric, diagonally dominant
 def BuildMatrix(n,x):
-    C = [[random.uniform(-x,x) for _ in range(n)] for _ in range(n)]    
+    C = [[abs(random.uniform(-x,x)) for _ in range(n)] for _ in range(n)]    
     for i in range(n):
         colSum = 0.0
         for j in range(n):
-            if(i is not j):
-                colSum += abs(C[i][j])
-        a = abs(C[i][i])
-        if(a < colSum):
-           C[i][i] = colSum * colSum
-    A = MatrixMultiplication(C, Transpose(C))
+            colSum += abs(C[i][j])
+        
+        C[i][i] = (colSum * colSum)
+    A = MatrixMultiplication(C,Transpose(C))
 
     return A
 
 def Createx(n,x):
-    return [random.uniform(-x,x) for _ in range(n)]
+    return [abs(random.uniform(-x,x)) for _ in range(n)]
 
 def Createb(A,x):
     b = VectorMatrixMultiplication(A,x)
@@ -34,10 +32,10 @@ def BuildTest(n,x,method):
         
     if(method is "Jacobi"):
 
-        print(Jacobi.Jacobi(A,b))
+        print(Jacobi.Jacobi(A,b, [1 for _ in range(len(b))],30))
     
     if(method is "GuassSeidel"):
-        print(GaussSeidel.GaussSeidel(A,b))
+        print(GaussSeidel.GaussSeidel(A,b,[1 for _ in range(n)], 15))
 
     if(method is "Conjugate"):
         print(GradientMethods.Conjugate(A,b))
@@ -46,8 +44,8 @@ def BuildTest(n,x,method):
         print(PowerMethods.PowerMethod(A, [1 for i in range(n)], 15))
     
     if(method is "InverseMethod"):
-        print(PowerMethods.InverseMethod(A, [2 for i in range(n)], 100))
-        print(PowerMethods.PowerMethod(A, [2 for i in range(n)], 100))
+        print(PowerMethods.InverseMethod(A, [2 for i in range(n)], 1000))
+        print(PowerMethods.PowerMethod(A, [2 for i in range(n)], 1000))
     
     if(method is "GaussBack"):
         print(Gauss_Elim.Backwards(A,b))
@@ -55,6 +53,6 @@ def BuildTest(n,x,method):
         print(Gauss_Elim.LUDecomposition(A,b))
     if(method is "Chole"):
         print(Gauss_Elim.CholeskySolver(A,b))
-
-
-BuildTest(3,100,'LU')
+    if(method is "cond"):
+        print(PowerMethods.Condition2(A,[2 for i in range(n)], 1000))
+BuildTest(5, 100, "cond")

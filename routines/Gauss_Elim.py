@@ -2,29 +2,23 @@ import random
 import math
 import MatrixOperations
 import copy
+import time
 import VectorOperations
 #homework set 4
 #Gauss-Elimination without setting the values below the pivots to zero. Also, for a squared matrix
 def Upper(A,b):
     n = len(A[0])
+    m = len(A)
+
     for k in range(n-1):
-        for i in range(k+1, n):
+        for i in range(k+1, m):
             factor = A[i][k]/A[k][k]
+            A[i][k] = -factor
             for j in range(k+1, n):
                 A[i][j] = A[i][j] -(factor*A[k][j])
             b[i] -= factor*b[k]
 #performs Gauss-Elimination, then returns the lower triangle matrix with 1 in the diagonal
 
-# Gauss-Elimination for rectangle Matrices
-def Gauss_Elim(A):
-    col = len(A[0])
-    row = len(A)
-
-    for k in range(row - 1):
-        for i in range(k+1, row):
-            A[i][k] = A[i][k]/A[k][k]
-            for j in range(k+1, col):
-                A[i][j] = A[i][j] -(A[i][k]*A[k][j])
 
 # Guass-Elimination that returns a list of the multiples used. first use guassian elimination, then forward sub, then backward sub
 def LUDecomposition(A,b):
@@ -32,13 +26,13 @@ def LUDecomposition(A,b):
     #perform Guassian Elimination where it modifies to a  upper and lower triangular matrix
     Upper(A,b)
     #Forward Substitution is performed on the modified Matrix, and produces the y vector to be used in backwards substition
-    y = Forward(A,b)
+    y = ForwardLU(A,b)
     #Backward substition is performed on the upper triangle of the matrix to produce the solution vector x.
     x = Backwards(A,y)
     return x
 
 #Perform Forward Substition on a lower Triangle matrix where 
-def Forward(A,b):
+def ForwardChole(A,b):
     n = len(A[0])
     x = [0 for _ in range(n)]
 
@@ -50,6 +44,17 @@ def Forward(A,b):
         x[k] = (b[k] - factor)/A[k][k]
     return x
 
+def ForwardLU(A,b):
+    n = len(A[0])
+    x = [0 for _ in range(n)]
+
+    for k in range(n):
+        x[k] = b[k]
+        factor = 0.0
+        for j in range(k-1):
+            factor += A[k][j] * x[j]
+        x[k] = (b[k] - factor)
+    return x
 
 def Backwards(A,b):
     n = len(b)
@@ -87,11 +92,12 @@ def CholeskyDecomp(A):
     return L
 
 def CholeskySolver(A,b):
+    start = time.process_time()
     L = CholeskyDecomp(A)
+    end = (time.process_time() - start)
+    print("Factor Time: ", end)
     Lt = MatrixOperations.Transpose(L)
-    y = Forward(L,b)
+    y = ForwardChole(L,b)
     x = Backwards(Lt,y)
     
     return x
-
-
