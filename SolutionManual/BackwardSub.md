@@ -1,5 +1,5 @@
-# Software Manual Forward Substitution 
-**Routine Name:** ForwardLU or ForwardChole
+# Software Manual Backward Substitution 
+**Routine Name:** Backwards
  
 **Author:** Alex Collantes
  
@@ -9,62 +9,41 @@ For example,
 
 `python3 Gauss_Elim.py`
 
-**Description/Purpose:** Forward substition is the proccess of solving linear algebraic Equations for Lower triangle Matrices. and produces a solution vector.
+**Description/Purpose:** Backward substitution is the proccess of solving linear algebraic Equations for Upper triangle Matrices. and produces a solution vector.
 
-ForwardLU: The main diagonal assumed to be 1's
-
-ForwardChole: Does not assume the main diagonal are 1's
+Assuming that the main diag
 
 **Input:** These two routines requires two inputs: as 2-D list and list: 
 
-`ForwardLU(A,b)`
+`BackwardsLU(A,b)`
 
-`ForwardChole(A,b)`
-
-**Output:** This routine produces the solution set of a lower triangle matrix.
+**Output:** This routine produces the solution set of a Upper triangle matrix.
  ```
-[5.336337859106299, 9.968689988607814, 1.6182381137483264]
+[5.929437930284277, 1.2354697474013567, 2.8048190371250175]
  ```
 
 **Usage/Example:** The routine requires two arguement. The routine returns a list as the solution.
 
-```python3 Taken from LU solver
+```python3 Taken from Gaussian Solver
   
-  y = ForwardLU(A,b)
+  x = Backwards(A,b)
 
 ```
 
-**Implementation/Code:** The following code ForwardLU:
+**Implementation/Code:** The following code is for Backwards substitution:
 
 ```python3 
 
-def ForwardLU(A,b):
-    n = len(A[0])
-    x = [0 for _ in range(n)]
-
-    for k in range(n):
+def Backwards(A,b):
+    n = len(b)
+    x = [0 for i in range(n)]
+    for k in range(n-1,-1,-1):
         x[k] = b[k]
-        factor = 0.0
-        for j in range(k-1):
-            factor += A[k][j] * x[j]
-        x[k] = (b[k] - factor)
-    return x
+        for j in range(k+1, n):
+            x[k] -= A[k][j] * x[j]
+        x[k] = x[k]/A[k][k]
+        
+    return x  
 
-```
-**Implementation/Code:** The following code ForwadChole:
-
-```python3 
-
-def ForwardLU(A,b):
-    n = len(A[0])
-    x = [0 for _ in range(n)]
-
-    for k in range(n):
-        x[k] = b[k]
-        factor = 0.0
-        for j in range(k-1):
-            factor += A[k][j] * x[j]
-        x[k] = (b[k] - factor)/A[k][k]
-    return x
 
 ```
