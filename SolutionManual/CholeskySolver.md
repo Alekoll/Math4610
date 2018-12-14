@@ -9,7 +9,7 @@ For example,
 
 `python3 Gauss_Elim.py`
 
-**Description/Purpose:** Given: A (n x n) and b solution set. Factorizing A by [Cholesky Factorization]() we can solve Ax = b.
+**Description/Purpose:** Given: A (n x n) and b solution set. Factorizing A by [Cholesky Factorization](https://github.com/Alekoll/Math4610/edit/master/SolutionManual/cholefactor.md) we can solve Ax = b.
 
 
 My version of the code, the factorization on produces the Lower triangle matrix without multiplying with the conjugate. That process happens when it is solved.
