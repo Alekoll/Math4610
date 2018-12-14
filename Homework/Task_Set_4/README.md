@@ -16,7 +16,7 @@
 
 1. [Cholesky Factorization](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem3) 
 
-1. [Test Cholesky](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem9) 
+1. [Test Cholesky](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem9) NOT DONE
 
 1. [Solving with Cholesky](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem10)
 
