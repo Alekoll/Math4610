@@ -9,7 +9,9 @@
  
 1. [Homework Set 4](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4)
     
-1. [Homework Set 5]()
+1. [Homework Set 5](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_5)
+
+1. [Homework Set 6](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_6)
   
   
 
