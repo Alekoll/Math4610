@@ -14,7 +14,7 @@ For example,
 
 **Input:** The routine requires 3 inputs: A, guess vector, maxiter: 
 
-`Jacobi(A, v, stop`
+`PowerMethod(A, v, stop)`
 
 **Output:** This routine produces the largest eigenvalue:
  
