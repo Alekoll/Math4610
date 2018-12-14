@@ -2,7 +2,7 @@
 
 ## Location of the Software Manual:
   
-  [Cholesky Factorization](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/GaussBackward.md)
+  [Cholesky Factorization](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/cholefactor.md)
   
 ## Location of the Routine:
   
