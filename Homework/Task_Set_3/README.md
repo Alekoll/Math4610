@@ -14,7 +14,7 @@
 
 1. [Parallel Matrix Operations](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_3/Problem7)
 
-1. [Implementation Vector Operations](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_3/Problem8)
+1. [Implementation Vector Operations](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_3/Problem3) It's going to send you to Problem 3 Readme since they are already implemented.
 
 1. [Vector Basis](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_3/Problem9)
 
