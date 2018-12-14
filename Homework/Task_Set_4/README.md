@@ -10,7 +10,7 @@
 
 1. [Solving with Gauss](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem5)
 
-1. [Gaussian Elimination Modified](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_3/Problem6) My Gauss Elimination already saved the factors. So this link just redirects you back to 1.
+1. [Gaussian Elimination Modified](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_3/Problem6) My Gauss Elimination already saves the factors. So this link just redirects you back to 1.
 
 1. [Solving with LU](https://github.com/Alekoll/Math4610/tree/master/Homework/Task_Set_4/Problem7)
 
