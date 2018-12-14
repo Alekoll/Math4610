@@ -1,4 +1,4 @@
-# Software Manual Solving With Cholesky Factorization 
+# Software Manual: Solving With Cholesky Factorization 
 **Routine Name:** CholeskySolver
  
 **Author:** Alex Collantes
