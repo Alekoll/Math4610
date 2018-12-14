@@ -13,7 +13,7 @@
   
   [Scalar Matrix Multiplication](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/MatrixScalar.md)
   
-  [Vector Matrix Multiplication](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/MatrixVector.md)
+  [Vector Matrix Multiplication](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/MatrixVectorMulti.md)
   
   [Matrix Matrix Multiplicaiton](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/MatrixMultiplication.md)
   
