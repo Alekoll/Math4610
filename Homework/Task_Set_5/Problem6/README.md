@@ -6,7 +6,7 @@
  
 ## Location of the Routines:
   
-  [Conjugate Routine](https://github.com/Alekoll/Math4610/blob/master/routines/GradientMethod.py)
+  [Conjugate Routine](https://github.com/Alekoll/Math4610/blob/master/routines/GradientMethods.py)
 
 ## Descripion:
 
