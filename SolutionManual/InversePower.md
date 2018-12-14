@@ -1,4 +1,4 @@
-# Software Manual: Find dominating Eigenvalue using Inverse Power method
+# Software Manual: Find Eigenvalue using Inverse Power method
 
 **Routine Name:** InverseMethod
  
@@ -10,35 +10,35 @@ For example,
 
 `python3 PowerMethods.py`
 
-**Description/Purpose:** Given: A (n x n), diagonally dominate, and guess vector. The power method will converge to the highest eigenvalue in the direction of the guess vector.
+**Description/Purpose:** Given: A (n x n), diagonally dominate, and guess vector. The power method will converge to the closest eigenvalue in the direction of the guess vector.
 
 
 **Input:** The routine requires 3 inputs: A, guess vector, maxiter: 
 
 `InversePower(A, v, stop)`
 
-**Output:** This routine produces the largest eigenvalue:
+**Output:** This routine produces the closest eigenvalue:
  
  ```
-13350630678.737057
+25534.35088001618
  ```
 
 **Usage/Example:** The routine requires two arguement. A, and b.
 ```
 import BuildMatrix
 
-A = BuildMatrix(5,100)
-exact = CreateX(5,100)
+A = BuildMatrix(5,10)
+exact = CreateX(5,10)
 b = Createb(A, exact)
 v = [2,2,2,2,2]
 
-eigenvalue = Inversemethod(A,v,100)
+eigenvalue = Inversemethod(A,v,1000)
 
 ```
 Eigenvalue:
 
 ```
-13350630678.737057
+25534.35088001618
 
 ```
 
@@ -48,19 +48,28 @@ Eigenvalue:
 ```python3 
 
 def InverseMethod(A,v,stop):
-    n = len(v)
-    norm = InfNorm(A)
-  
-    eigen = 0.0
-    I = [[0 for i in range(n)]for i in range(n)]
-    for i in range(n):
-        I[i][i] = norm
-    for i in range(stop):
-       B = Subtraction(A, I)
-       approx = GaussBackWard(B, v)
-       ScalarMultiplication(approx, 1/Magnitude(approx))
-       for j in range(n):
-           v[j] = approx[j]
-       eigen = InnerProduct(v, VectorMatrixMultiplication(A,v))
-    return eigen
+
+    z = copy.deepcopy(v)
+    ScalarMultiplication(z,1/lengthnorms.LengthNorm2(v))
+
+    y = Gauss_Elim.LUDecomposition(A,z)
+
+    temp = InnerProduct(z, y)
+    k = 0
+
+    while k < stop:
+
+        
+        ScalarMultiplication(y, 1/lengthnorms.LengthNorm2(y))
+        z = Gauss_Elim.LUDecomposition(A,y)
+    
+        temp1 = InnerProduct(z,y)
+    
+        temp = temp1
+        for i in range(len(z)):
+            y[i] = z[i]
+        k += 1
+        
+    return 1/temp1
+
 ```
