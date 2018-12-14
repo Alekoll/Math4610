@@ -66,7 +66,11 @@ Conjugate:  13.065046999999993
 
 Error: [2.3283064365386963e-10, 2.3283064365386963e-10, 2.2025778889656067e-07, 2.3283064365386963e-10]
 
-### Graph
+### Conclusion
+
+The Gradient methods take much longer than Jacobi and Gauss, but that could be that my functions are ill-conditioned.
+
+You can check the graph out in the pdf in the folder.
 
 
 
