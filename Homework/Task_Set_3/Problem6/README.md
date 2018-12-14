@@ -3,9 +3,9 @@
 
 ## Location of the Software Manuals:
   
-  [Kronecker Product/ Outer Product](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L1Norm.md)
+  [Kronecker Product/ Outer Product](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/Kronecker.md)
   
-  [Determinant](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/L2Norm.md)
+  [Determinant](https://github.com/Alekoll/Math4610/blob/master/SolutionManual/MatrixDeterminant.md)
   
   
 ## Location of the Routines:
